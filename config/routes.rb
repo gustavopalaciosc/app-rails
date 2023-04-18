@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   
-  get "/pokemons", to: "pokemons#index"
+  # GET HomePage
+  get "/", to: "pokemons#index" 
+
+  # GET pokemons a traves de la POKEAPI
+  get "/pokemons", to: "pokemons#get"
 end
